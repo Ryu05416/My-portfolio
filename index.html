@@ -9,144 +9,166 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
   <link rel="manifest" href="./images/site.webmanifest" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="./css/style.css" rel="stylesheet" />
-  <script type="text/javascript" src="./js/library/jquery-3.6.4.min.js"></script>
   <script type="text/javascript" src="./js/script.js"></script>
   <title>Ryu’s Portfolio Site</title>
 </head>
 
 <body>
-  <header>
+  <div>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-lg">
+          <a class="navbar-brand" href="#">Ryu’sPortfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">introduction</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  skill
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">できること</a></li>
+                  <li><a class="dropdown-item" href="#">使用できる言語・ツール</a></li>
+                  <li><a class="dropdown-item" href="#">少し使用できる言語・ツール</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  leaning
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">現在学んでいること</a></li>
+                  <li><a class="dropdown-item" href="#">今後したいこと</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--
     <h1>Ryu’sPortfolio</h1>
-    <nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <ul>
         <li><a href="introduction">Introduction</a></li>
         <li><a href="skill">Skill</a></li>
         <li><a href="learning">leaning</a></li>
       </ul>
     </nav>
-  </header>
-  <main>
-    <div>
-      <h1>Welcome to Ryu’s Portfolio Site</h1>
-    </div>
-    <section>
-      <h1>Introduction</h1>
-      <table>
-        <tr>
-          <th>生年</th>
-          <td>2001年生まれ</td>
-        </tr>
-        <tr>
-          <th>血液型</th>
-          <td>B型</td>
-        </tr>
-        <tr>
-          <th>出身地</th>
-          <td>高知県</td>
-        </tr>
-        <tr>
-          <th>最終学歴</th>
-          <td>高等学校卒業</td>
-        </tr>
-        <tr>
-          <th>趣味</th>
-          <td>読書、漫画、アニメ、映画</td>
-        </tr>
-      </table>
-    </section>
-    <section>
-      <h1>Skill</h1>
-      <h2>できること</h2>
-      <ul>
-        <li>静的サイトの作成・編集</li>
-        <li>端末のセットアップ</li>
-        <li>Microsoft Officeを使用する事務業務</li>
-      </ul>
-      <h2>使用できる言語・ツール</h2>
-      <ur>
-        <li>
-          <p>HTML</p>
-        </li>
-        <li>
-          <p>CSS</p>
-        </li>
-        <li>
-          <p>Javascript</p>
-        </li>
-        <li>
-          <p>Ruby</p>
-        </li>
-        <li>
-          <p>PHP</p>
-        </li>
-        <li>
-          <p>Git</p>
-        </li>
-        <li>
-          <p>GitHub</p>
-        </li>
-        <li>
-          <p>Markdown</p>
-        </li>
-        <li>
-          <p>VScode</p>
-        </li>
-      </ur>
-      <h2>少し使用できる言語・ツール</h2>
-      <ul>
-        <li>
-          <p>Linux</p>
-        </li>
-        <li>
-          <p>Shell Script</p>
-        </li>
-        <li>
-          <p>SQL</p>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h1>leaning</h1>
-      <h2>現在学んでいること</h2>
-      <ul>
-        <li>基本情報技術者試験</li>
-        <li>LaravelやRailsなどのフレームワークを使用したWebアプリ開発</li>
-      </ul>
-      <h2>今後したいこと</h2>
-      <ul>
-        <li>Web開発</li>
-        <li>モバイルアプリ開発</li>
-      </ul>
-    </section>
-  </main>
-  <aside>
-    <div>
-      <ul>
-        <li>TOP</li>
-        <li>Introduction</li>
-        <li>
-          Skill
-          <ul>
-            <li>できること</li>
-            <li>使用できる言語・ツール</li>
-            <li>少し使用できる言語・ツール</li>
-          </ul>
-        </li>
-        <li>
-          leaning
-          <ul>
-            <li>現在学んでいること</li>
-            <li>今後したいこと</li>
-          </ul>
-        </li>
-        <li>details</li>
-      </ul>
-    </div>
-  </aside>
-  <footer>
-    <p><a href="#">TOPへ戻る</a></p>
-  </footer>
+  -->
+    </header>
+    <main class="container-lg">
+      <div>
+        <h1>Welcome to Ryu’s Portfolio Site</h1>
+      </div>
+      <section>
+        <h1>Introduction</h1>
+        <table>
+          <tr>
+            <th>生年</th>
+            <td>2001年生まれ</td>
+          </tr>
+          <tr>
+            <th>血液型</th>
+            <td>B型</td>
+          </tr>
+          <tr>
+            <th>出身地</th>
+            <td>高知県</td>
+          </tr>
+          <tr>
+            <th>最終学歴</th>
+            <td>高等学校卒業</td>
+          </tr>
+          <tr>
+            <th>趣味</th>
+            <td>読書、漫画、アニメ、映画</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h1>Skill</h1>
+        <h2>できること</h2>
+        <ul>
+          <li>静的サイトの作成・編集</li>
+          <li>端末のセットアップ</li>
+          <li>Microsoft Officeを使用する事務業務</li>
+        </ul>
+        <h2>使用できる言語・ツール</h2>
+        <ur>
+          <li>
+            <p>HTML</p>
+          </li>
+          <li>
+            <p>CSS</p>
+          </li>
+          <li>
+            <p>Javascript</p>
+          </li>
+          <li>
+            <p>Ruby</p>
+          </li>
+          <li>
+            <p>PHP</p>
+          </li>
+          <li>
+            <p>Git</p>
+          </li>
+          <li>
+            <p>GitHub</p>
+          </li>
+          <li>
+            <p>Markdown</p>
+          </li>
+          <li>
+            <p>VScode</p>
+          </li>
+        </ur>
+        <h2>少し使用できる言語・ツール</h2>
+        <ul>
+          <li>
+            <p>Linux</p>
+          </li>
+          <li>
+            <p>Shell Script</p>
+          </li>
+          <li>
+            <p>SQL</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h1>leaning</h1>
+        <h2>現在学んでいること</h2>
+        <ul>
+          <li>基本情報技術者試験</li>
+          <li>LaravelやRailsなどのフレームワークを使用したWebアプリ開発</li>
+        </ul>
+        <h2>今後したいこと</h2>
+        <ul>
+          <li>Web開発</li>
+          <li>モバイルアプリ開発</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p><a href="#">TOPへ戻る</a></p>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </body>
 
 </html>
