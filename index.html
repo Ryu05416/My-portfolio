@@ -19,7 +19,7 @@
 <body>
   <div>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-lg">
           <a class="navbar-brand" href="#">Ryu’sPortfolio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -27,148 +27,95 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto w-50 nav-justified">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">introduction</a>
+                <a class="nav-link active text-end border-1" aria-current="page" href="#introduction">introduction</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  skill
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">できること</a></li>
-                  <li><a class="dropdown-item" href="#">使用できる言語・ツール</a></li>
-                  <li><a class="dropdown-item" href="#">少し使用できる言語・ツール</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link active text-end" aria-current="page" href="#skill">Skill</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  leaning
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">現在学んでいること</a></li>
-                  <li><a class="dropdown-item" href="#">今後したいこと</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link active text-end" aria-current="page" href="#leaning">Learning</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <!--
-    <h1>Ryu’sPortfolio</h1>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <ul>
-        <li><a href="introduction">Introduction</a></li>
-        <li><a href="skill">Skill</a></li>
-        <li><a href="learning">leaning</a></li>
-      </ul>
-    </nav>
-  -->
     </header>
     <main class="container-lg">
-      <div>
-        <h1>Welcome to Ryu’s Portfolio Site</h1>
+      <div class="row py-5">
+        <p class="col-md-8 offset-md-2 my-5 py-5 text-center display-1 fst-italic -3">Welcome to<br>Ryu’s
+          Portfolio Site</p>
       </div>
-      <section>
-        <h1>Introduction</h1>
-        <table>
-          <tr>
-            <th>生年</th>
-            <td>2001年生まれ</td>
-          </tr>
-          <tr>
-            <th>血液型</th>
-            <td>B型</td>
-          </tr>
-          <tr>
-            <th>出身地</th>
-            <td>高知県</td>
-          </tr>
-          <tr>
-            <th>最終学歴</th>
-            <td>高等学校卒業</td>
-          </tr>
-          <tr>
-            <th>趣味</th>
-            <td>読書、漫画、アニメ、映画</td>
-          </tr>
-        </table>
+      <section class="row my-5 py-5" id="introduction">
+        <p class="col-md-8 offset-md-2 text-center display-3">Introduction</p>
+        <p class="col-md-8 offset-md-2 fs-1 fw-bold py-3">自己紹介</p>
+        <p class="col-md-4 offset-md-2 fs-4">生年：2001年</p>
+        <p class="col-md-4 fs-4">血液型：B型</p>
+        <p class="col-md-4 offset-md-2 fs-4 ">出身地：高知県</p>
+        <p class="col-md-4 fs-4 ">最終学歴：高等学校卒業</p>
+        <p class="col-md-8 offset-md-2 fs-4 ">趣味：読書、漫画、アニメ、映画</p>
       </section>
-      <section>
-        <h1>Skill</h1>
-        <h2>できること</h2>
-        <ul>
-          <li>静的サイトの作成・編集</li>
-          <li>端末のセットアップ</li>
-          <li>Microsoft Officeを使用する事務業務</li>
-        </ul>
-        <h2>使用できる言語・ツール</h2>
-        <ur>
-          <li>
-            <p>HTML</p>
-          </li>
-          <li>
-            <p>CSS</p>
-          </li>
-          <li>
-            <p>Javascript</p>
-          </li>
-          <li>
-            <p>Ruby</p>
-          </li>
-          <li>
-            <p>PHP</p>
-          </li>
-          <li>
-            <p>Git</p>
-          </li>
-          <li>
-            <p>GitHub</p>
-          </li>
-          <li>
-            <p>Markdown</p>
-          </li>
-          <li>
-            <p>VScode</p>
-          </li>
-        </ur>
-        <h2>少し使用できる言語・ツール</h2>
-        <ul>
-          <li>
-            <p>Linux</p>
-          </li>
-          <li>
-            <p>Shell Script</p>
-          </li>
-          <li>
-            <p>SQL</p>
-          </li>
-        </ul>
+      <section class="row my-5 py-5" id="skill">
+        <p class="col-md-8 offset-md-2 text-center display-3">Skill</p>
+        <p class="col-md-8 offset-md-2 fs-1 fw-bold py-3">できること</p>
+        <p class="col-md-8 offset-md-2 fs-4">・静的サイトの作成と編集</p>
+        <p class="col-md-8 offset-md-2 fs-4">・端末のセットアップ</p>
+        <p class="col-md-8 offset-md-2 fs-4">・Microsoft Officeでの事務業務</p>
+        <h2 class="col-md-8 offset-md-2 fs-1 fw-bold py-3 mt-5 py-5">使用できる言語・ツール</h2>
+        <div class="col-md-2 offset-md-2 col-6"><img src="./images/html5-original.svg">
+          <p class="text-center h1">HTML</p>
+        </div>
+        <div class="col-md-2 col-6"><img src="./images/css3-original.svg">
+          <p class="text-center h1">CSS</p>
+        </div>
+        <div class="col-md-2 col-6  "><img src="./images/javascript-original.svg">
+          <p class="text-center h3">Javascript</p>
+        </div>
+        <div class="col-md-2 col-6  "><img py-5 src="./images/ruby-original.svg">
+          <p class="text-center h1">Ruby</p>
+        </div>
+        <div class="col-md-2 offset-md-2 col-6  "><img src="./images/php-original.svg">
+          <p class="text-center h1">PHP</p>
+        </div>
+        <div class="col-md-2 col-6  "><img src="./images/git-original.svg">
+          <p class="text-center h1">Git</p>
+        </div>
+        <div class="col-md-2 col-6  "><img src="./images/github-original.svg">
+          <p class="text-center h1">GitHub</p>
+        </div>
+        <div class="col-md-2 col-6  "><img src="./images/markdown-original.svg">
+          <p class="text-center h3">Markdown</p>
+        </div>
+        <div class="col-md-2 offset-md-2 col-6  "><img src="./images/vscode-original.svg">
+          <p class="text-center h1">VScode</p>
+        </div>
+        <div class="col-md-2 col-6  "><img src="./images/bootstrap-original.svg">
+          <p class="text-center h2">Bootstrap</p>
+        </div>
+        <p class="col-md-8 offset-md-2  fs-2 fw-bold mt-5 py-5">少し使用できる言語・ツール</p>
+        <div class="col-md-2 offset-md-2 col-6  "><img src="./images/linux-original.svg">
+          <p class="text-center h1">linux</p>
+        </div>
+        <div class="col-md-2 col-6  "><img src="./images/bash-original.svg">
+          <p class="text-center h3">ShellScript</p>
+        </div>
+        <div class="col-md-2 col-6  "><img src="./images/mysql-original.svg">
+          <p class="text-center h1">SQL</p>
+        </div>
       </section>
-      <section>
-        <h1>leaning</h1>
-        <h2>現在学んでいること</h2>
-        <ul>
-          <li>基本情報技術者試験</li>
-          <li>LaravelやRailsなどのフレームワークを使用したWebアプリ開発</li>
-        </ul>
-        <h2>今後したいこと</h2>
-        <ul>
-          <li>Web開発</li>
-          <li>モバイルアプリ開発</li>
-        </ul>
+      <section class="row my-5 py-5" id="leaning">
+        <p class="col-md-8 offset-md-2 text-center display-3">Leaning</p>
+        <p class="col-md-8 offset-md-2 fs-1 fw-bold py-3">現在学んでいること</p>
+        <p class="col-md-8 offset-md-2 fs-4">・基本情報技術者試験</p>
+        <p class="col-md-8 offset-md-2 fs-4">・フレームワークを使用したWebアプリ開発</p>
+        <p class="col-md-8 offset-md-2 fs-1 fw-bold mt-5 py-3">今後したいこと</p>
+        <p class="col-md-8 offset-md-2 fs-4">・Webアプリを実際に運用する</p>
+        <p class="col-md-8 offset-md-2 fs-4">・モバイルアプリ開発</p>
       </section>
-    </main>
-    <footer>
-      <p><a href="#">TOPへ戻る</a></p>
-    </footer>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
